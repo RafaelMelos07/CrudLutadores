@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Lutadores</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS básico para estilizar a página */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type="text"], input[type="number"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .edit-btn, .delete-btn {
+            cursor: pointer;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+        }
+        .edit-btn { background-color: #4CAF50; }
+        .delete-btn { background-color: #f44336; }
+    </style>
+</head>
+<body>
+    <h2>CRUD de Lutadores</h2>
+
+    <div>
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="number" id="idade" placeholder="Idade">
+        <input type="number" id="peso" placeholder="Peso (kg)">
+        <input type="text" id="estiloDeLuta" placeholder="Estilo de Luta">
+        <input type="submit" id="addBtn" value="Adicionar Lutador">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Peso</th>
+                <th>Estilo de Luta</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="lutadoresTable">
+            <!-- Lutadores serão listados aqui -->
+        </tbody>
+    </table>
+
+    <!-- Incluindo o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
