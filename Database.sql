@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS Lutadores (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    idade INT NOT NULL,
+    peso DECIMAL(5,2) NOT NULL,
+    estilo_de_luta VARCHAR(50) NOT NULL
+);
+
+
+
